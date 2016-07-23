@@ -1,0 +1,80 @@
+body{
+    font-family: "Open Sans Condensed";
+}
+
+input[type=text]{
+    border-style: none;
+    font-family: "Open Sans Condensed";
+    font-size: 20px;
+    height: 28px;
+    color: black;
+}
+#mesArea{
+    height: 235px;
+    overflow-y: scroll;
+}
+#mesArea ul{
+    text-align: left;
+    list-style-type: none;
+    margin-left: 0; 
+    padding-left: 0;
+}
+#mesArea li{
+    padding-left: 10px;
+    border-bottom: 1px solid #20421f;
+    transition: all 0.7s ease;
+    font-size: 20px;
+}
+#mesArea li:nth-child(2n){
+    background: #00a501;
+}
+
+#mesArea li:hover{
+    background: #20421f;
+}
+input[type=text]::-webkit-input-placeholder{
+    text-indent: 0px;
+    color: black;   
+    transition: text-indent 0.7s ease;
+}
+
+input[type=text]:focus::-webkit-input-placeholder {
+    text-indent: 500px; 
+    transition: text-indent 0.7s ease;
+}
+
+#chat{
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+
+
+#futter{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+}
+
+#sendButton{
+    font-family: "Open Sans Condensed";
+    background: #00a501;
+    border-style: none;
+    font-size: 17px;
+     outline: none;
+    height: 28px;
+    width: 60px;
+    line-height: 40px;
+    transition: all 0.7s ease;
+}
+#sendButton:hover{
+    background: #51c878;
+}
+#sendButton:active{
+    background: #20421f;
+}
